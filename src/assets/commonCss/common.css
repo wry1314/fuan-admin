@@ -1,0 +1,108 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td ,textarea,input { margin:0; padding:0;  }
+address,cite,dfn,em,var, i {font-style:normal;}
+body {font-size: 16px; line-height: 1.5; font-family:'Microsoft Yahei','simsun','arial','tahoma';  color: #333; }
+table { border-collapse:collapse; border-spacing:0; }
+h1, h2, h3, h4, h5, h6, th { font-size: 100%; font-weight: normal; }
+button,input,select,textarea{font-size:100%;}
+fieldset,img{border:0;}
+a,
+img {
+  -webkit-touch-callout: none
+}
+a,
+a:active,
+a:focus,
+a:hover,
+a:visited {text-decoration: none}
+input[type=password],
+input[type=text],
+textarea {
+  resize: none;
+  outline: 0;
+  -webkit-appearance: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background: #fff
+}
+ul, ol { list-style: none; }
+.fr{
+  float: right;
+}
+.fl{
+  float: left;
+}
+.view{
+  margin-left: 200px;
+  margin-top: 62px;
+}
+.content{
+  text-align: left;
+  padding: 0 20px;
+}
+.el-pagination{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.orange{
+  background: #ff5656;
+  border: 1px solid #ff5656;
+  color: #fff;
+}
+.block{
+  display: block!important;
+}
+.orange:hover{
+  background: #ff9a9a;
+  border-color: #ff9a9a;
+  color: #fff;
+}
+
+.orange:focus{
+  background: #ff9a9a;
+  border-color: #ff9a9a;
+  color: #fff;
+}
+
+
+.orange.is-disabled{
+  background: #fab6b6;
+  border-color: #fab6b6;
+  color: #fff;
+}
+.el-message{
+  position: fixed;
+  top: 45%!important;
+}
+.el-popover-black{
+  background: rgba(0,0,0,.8);
+  color: #ccc;
+  border: none;
+}
+.el-popover--plain{
+  padding: 8px!important;
+}
+.popper__arrow{
+  border-color: rgba(0,0,0,.8);
+}
+.el-cascader-menu{
+  min-width: 160px;
+}
+.el-loading-mask{
+  position: fixed;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.disable {
+  pointer-events: none;
+}
+.el-drawer__body{
+  height: 100%;
+}
+.el-table th{
+  background: #f5f7fa;
+  /*padding: 0;*/
+}
+
