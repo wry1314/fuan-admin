@@ -2,11 +2,12 @@ import Vue from 'vue'
 import Router from 'vue-router'
 //登录
 import {loginRouter} from './module/login/index'
+// 生产计划管理
+import {productionRouter} from './module/production/index'
 
-console.log(loginRouter)
 
 Vue.use(Router)
-const routerData = [].concat(loginRouter);
+const routerData = [].concat(loginRouter,productionRouter);
 const router = new Router({
   routes: routerData,
 });

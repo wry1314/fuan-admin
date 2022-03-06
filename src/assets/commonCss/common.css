@@ -36,6 +36,7 @@ ul, ol { list-style: none; }
 .view{
   margin-left: 200px;
   margin-top: 62px;
+  text-align: left;
 }
 .content{
   text-align: left;

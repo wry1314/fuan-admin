@@ -2,7 +2,7 @@
   <div class="main header-nav">
     <div class="logo">
       <!--<img src="../../assets/commonImg/logo.png"/>-->
-      <h1>太华系统</h1>
+      <h1>伏安电工</h1>
     </div>
     <div class="top-menu">
       <el-menu class="el-menu-demo" mode="horizontal" background-color="#edebec" text-color="#464646"  @select="menuHandleSelect">
@@ -33,16 +33,18 @@
 <script>
   import {loginOutAPi} from "../../api/loginApi";
   // import {getMenu} from '../../api/commonApi.js'
+  import menuData from '../../assets/data/menu'
     export default {
         name: "headerNav",
       data(){
           return {
-            menuData:[{name:'',path:'',index:'1-1'}],
+            menuData:menuData.data,
             pathObj:{},
             username:sessionStorage.getItem('userName') || 'admin'
           }
       },
       created(){
+        console.log(menuData.data)
         // this.getMenuApi();
       },
       methods:{
@@ -63,11 +65,11 @@
             if(data.code == 0){
               sessionStorage.removeItem('token');
               vm.$router.push({
-                path:'/web/login',
+                path:'/login',
               })
             }else{
               vm.$router.push({
-                path:'/web/login',
+                path:'/login',
               })
             }
           }).catch((err) => {
@@ -102,6 +104,7 @@
 
         },
         jumpPage(url){
+          console.log(url)
           this.$router.push({
             path:url,
           })
