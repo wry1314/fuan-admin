@@ -44,7 +44,6 @@
           }
       },
       created(){
-        console.log(menuData.data)
         // this.getMenuApi();
       },
       methods:{
